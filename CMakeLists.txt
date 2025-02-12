@@ -1,5 +1,6 @@
 project(PhysicsSim)
 
+add_subdirectory(lib)
 add_subdirectory(lib/glfw)
 add_subdirectory(lib/glad)
 add_subdirectory(lib/imgui)
@@ -16,4 +17,4 @@ target_sources("${CMAKE_PROJECT_NAME}" PRIVATE ${MY_SOURCES})
 target_link_libraries(
   "${CMAKE_PROJECT_NAME}" PRIVATE
   glfw glad imgui
-)
+  )
